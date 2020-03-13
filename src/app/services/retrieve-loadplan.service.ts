@@ -14,7 +14,7 @@ export class RetrieveLoadplanService {
     var url = "api/shipping/shipments/" + uuid + "/loadplan";  
      */
     return new Promise((resolve, reject) => {
-      let url = 'assets/package-arrangement-' + uuid + '.json';
+      let url = 'assets/package-arrangement.json';
       this.http
         .get(url)
         .toPromise()

@@ -2,6 +2,9 @@ import { Component, OnInit, ViewChild, ElementRef, Input } from '@angular/core';
 import * as THREE from 'three-full';
 import { OrbitControls } from '@avatsaev/three-orbitcontrols-ts';
 
+import { RetrieveLoadplanService } from "../services/retrieve-loadplan.service";
+
+
 @Component({
   selector: 'equipment-visualizer',
   templateUrl: './equipment-visualizer.component.html',
@@ -37,7 +40,7 @@ export class EquipmentVisualizerComponent implements OnInit {
     return this.canvasRef.nativeElement;
   }
 
-  constructor() {
+  constructor(private retrieveLoadplanService: RetrieveLoadplanService) {
     this.scene = new THREE.Scene();
     this.camera = new THREE.PerspectiveCamera(35, 1200 / 640, 0.1, 1000)
   }
@@ -94,7 +97,7 @@ export class EquipmentVisualizerComponent implements OnInit {
     this.scene.add(this.light);
   }
 
-  createMesh() {
+  async createMesh() {
     //const geometry = new THREE.BoxGeometry(5, 5, 5);
     //const material = new THREE.MeshLambertMaterial({ color: 0xff0000 });
     //this.mesh = new THREE.Mesh(geometry, material);
@@ -114,6 +117,8 @@ export class EquipmentVisualizerComponent implements OnInit {
     this.makeInstance(geometry, this.hsl(5 / 8, 1, .5), d, -d, d);
     this.makeInstance(geometry, this.hsl(6 / 8, 1, .5), -d, d, d);
     this.makeInstance(geometry, this.hsl(7 / 8, 1, .5), d, d, d);
+
+    let loadplan = await this.retrieveLoadplanService.getPackageArrangementByEquipmentUsage("11111");
 
     //this.scene.add(this.mesh);
   }
