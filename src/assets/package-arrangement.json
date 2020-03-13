@@ -1,70 +1,70 @@
 {
-	"data": {
-		"type": "EquipmentUsage",
-		"id": "121a8e76-d5eb-414e-b150-604e964b8d0a",
-		"attributes": {
-			"calculatedGrossWeight": {
-				"value": 0,
-				"unit": "kg"
-			},
-			"calculatedLdm": 0,
-			"calculatedNetWeight": {
-				"value": 0,
-				"unit": "kg"
-			},
-			"calculatedNumberOfPackages": 40,
-			"calculatedVolume": {
-				"value": 0,
-				"unit": "m³"
-			},
-			"deviations": [],
-			"incoterm": "FAS",
-			"multiplier": 1,
-			"packageActuals": [],
-			"packageArrangements": [
-				{
-					"metadata": {
-						"filters": []
-					},
-					"x": 1,
-					"xlength": 4,
-					"y": 2,
-					"ylength": 5,
-					"z": 3,
-					"zlength": 6
-				},
-				{
-					"metadata": {
-						"filters": []
-					},
-					"x": 1,
-					"xlength": 4,
-					"y": 2,
-					"ylength": 5,
-					"z": 3,
-					"zlength": 6
-				}
-			],
-			"packagePlacements": [],
-			"plannedLegLoads": [],
-			"referenceNumber": "eu1",
-			"roundtripBack": [],
-			"serviceType": "xyZz",
-			"skuAmount": 0,
-			"transportMode": "abcd",
-			"transporting": []
-		},
-		"links": {
-			"self": {
-				"href": "http://localhost/shipping/equipmentUsages/121a8e76-d5eb-414e-b150-604e964b8d0a",
-				"meta": {}
-			}
-		},
-		"meta": {
-			"filters": []
-		}
-	},
-	"meta": {
-		"fields": []
-	}
+  "data": {
+    "type": "EquipmentUsage",
+    "id": "121a8e76-d5eb-414e-b150-604e964b8d0a",
+    "attributes": {
+      "calculatedGrossWeight": {
+        "value": 0,
+        "unit": "kg"
+      },
+      "calculatedLdm": 0,
+      "calculatedNetWeight": {
+        "value": 0,
+        "unit": "kg"
+      },
+      "calculatedNumberOfPackages": 40,
+      "calculatedVolume": {
+        "value": 0,
+        "unit": "m³"
+      },
+      "deviations": [],
+      "incoterm": "FAS",
+      "multiplier": 1,
+      "packageActuals": [],
+      "packageArrangements": [
+        {
+          "metadata": {
+            "filters": []
+          },
+          "x": 1,
+          "xlength": 4,
+          "y": 2,
+          "ylength": 5,
+          "z": 3,
+          "zlength": 6
+        },
+        {
+          "metadata": {
+            "filters": []
+          },
+          "x": 1,
+          "xlength": 4,
+          "y": 2,
+          "ylength": 5,
+          "z": 3,
+          "zlength": 6
+        }
+      ],
+      "packagePlacements": [],
+      "plannedLegLoads": [],
+      "referenceNumber": "eu1",
+      "roundtripBack": [],
+      "serviceType": "xyZz",
+      "skuAmount": 0,
+      "transportMode": "abcd",
+      "transporting": []
+    },
+    "links": {
+      "self": {
+        "href": "http://localhost/shipping/equipmentUsages/121a8e76-d5eb-414e-b150-604e964b8d0a",
+        "meta": {}
+      }
+    },
+    "meta": {
+      "filters": []
+    }
+  },
+  "meta": {
+    "fields": []
+  }
 }

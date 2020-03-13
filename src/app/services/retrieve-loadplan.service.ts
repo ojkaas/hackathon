@@ -20,6 +20,7 @@ export class RetrieveLoadplanService {
         .toPromise()
         .then(res => {
           // Success
+          console.log(res);
           this.json = res.json();
           resolve(res.json());
         });
