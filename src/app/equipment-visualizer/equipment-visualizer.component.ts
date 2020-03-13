@@ -119,8 +119,13 @@ export class EquipmentVisualizerComponent implements OnInit {
   }
 
   public drawTruck(l, w, h) {
+    /*
     const loader = new THREE.GLTFLoader();
     const url = 'assets/truck.glb';
+
+    loader.load(url, function(obj) {
+      this.scene.add(obj.scene);
+    });*/
 
     const geometry = new THREE.BoxGeometry(l, w, h);
     const color = this.hsl(7 / 8, 1, .5);

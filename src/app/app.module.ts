@@ -7,11 +7,12 @@ import { HttpModule } from '@angular/http';
 import { HereMapComponent } from './here-map/here-map.component';
 import { RetrieveItineraryService } from './services/retrieve-itinerary.service';
 import { EquipmentVisualizerComponent } from './equipment-visualizer/equipment-visualizer.component';
+import { RetrieveLoadplanService } from './services/retrieve-loadplan.service';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule, HttpModule ],
   declarations: [ AppComponent, HereMapComponent, EquipmentVisualizerComponent ],
   bootstrap:    [ AppComponent ],
-  providers: [RetrieveItineraryService]
+  providers: [RetrieveItineraryService, RetrieveLoadplanService]
 })
 export class AppModule { }
