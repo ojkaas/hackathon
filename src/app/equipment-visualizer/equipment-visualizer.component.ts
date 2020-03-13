@@ -119,7 +119,8 @@ export class EquipmentVisualizerComponent implements OnInit {
     this.makeInstance(geometry, this.hsl(7 / 8, 1, .5), d, d, d);
 
     let loadplan = await this.retrieveLoadplanService.getPackageArrangementByEquipmentUsage("11111");
-
+ 
+ 
     //this.scene.add(this.mesh);
   }
 
