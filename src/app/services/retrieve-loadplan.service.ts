@@ -9,12 +9,12 @@ export class RetrieveLoadplanService {
   private json: JSON;
   constructor(private http: Http) {}
 
-  async getItineraryByShipment(uuid: string): Promise<any[]> {
+  async getPackageArrangementByEquipmentUsage(uuid: string): Promise<any[]> {
     /*
     var url = "api/shipping/shipments/" + uuid + "/loadplan";  
      */
     return new Promise((resolve, reject) => {
-      let url = 'assets/itinerary-example-' + uuid + '.json';
+      let url = 'assets/package-arrangement-' + uuid + '.json';
       this.http
         .get(url)
         .toPromise()
